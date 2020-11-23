@@ -76,7 +76,6 @@ export default {
         }
       })
       this.tareas = newTask
-      this.idCount = 0
     },
 
     deleteTask(id) {
