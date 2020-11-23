@@ -7,7 +7,7 @@
       <div :style="cssCardColor" class="card-footer d-flex flex-wrap justify-content-around px-md-1  px-sm-1 px-lg-1">
         <button  class="btn btn-lg btn-sm btn-secondary py-auto mb-1" type="button" v-on:click="deleteTask"><i class="material-icons">delete</i></button>
         <button  v-show="!this.finished" class="btn  btn-lg btn-sm btn-outline-success mb-1 mx-1" type="button" v-on:click="finishTask">Finalizar</button>
-        <i v-show="this.finished" class="material-icons my-auto" :style="cssProp">done</i>
+        <i v-show="this.finished" class="material-icons my-auto" :style="setFinishedCssProps">done</i>
       </div>
     </div>
   </div>
@@ -28,20 +28,17 @@ export default {
     },
 
     computed: {
-      cssCardColor(){
+      cssCardColor() {
         return {
           'background-color': this.cardColor,
         }
       },
-      cssProp() {
-        if (this.finished){
+
+      setFinishedCssProps() {
           return {
             'color': this.isFinishedColor,
             'font-size': this.chekedIconSize+"em",
           }
-        } else {
-          return {}
-        }
       },
     },
 
