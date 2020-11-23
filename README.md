@@ -14,8 +14,7 @@ npm install
 
 ### Compiles and hot-reloads for development
 
-\*To run the application
-\*On the project folder run
+\*To run the application, on the project folder run
 
 ```
 npm run serve
