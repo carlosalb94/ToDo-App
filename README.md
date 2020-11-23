@@ -1,4 +1,6 @@
 # my-todo-app
+## General info
+#### A task to-do app build in Vue.Js
 
 ## Project setup 
 ```
