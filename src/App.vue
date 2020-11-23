@@ -1,6 +1,6 @@
 <template>
   <div :style="cssProps">
-    <Board class="container-lg py-5 px-3"/>
+    <Board class="container-lg container-md container-sm py-5 px-3"/>
   </div>
 </template>
 

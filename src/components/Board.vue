@@ -1,17 +1,17 @@
 <template>
   <div v-if="tareas" :style="cssProps">
-    <div class="input-group col-6 mx-auto">
+    <div class="input-group col-lg-6 col-md-6 col-sm-6  mx-auto">
       <input
-        class="form-control"
+        class="input-group-text bg-light col-lg-12 mx-auto col-md-12 col-sm-12"
         v-model="textoInput"
         v-on:keyup.enter="newTask(textoInput)" 
         type="text"
         placeholder="Agregar tarea"
       />
-      <button class="btn btn-outline-secondary" type="button" v-on:click="deleteAllTasks">Eliminar tareas finalizadas</button>
+      <button class="btn btn-secondary col-lg-6 col-md-6 mx-auto mt-3" type="button" v-on:click="deleteAllTasks">Borrar finalizadas</button>
     </div>
-    <div class="row d-flex justify-content-center mt-5">
-      <div class="col-lg-6 border-right">
+    <div class="row-lg row-sm row-md d-flex justify-content-center mt-3">
+      <div class="col-lg-6 col-md-6 col-sm-6 border-right">
         <h5 class="text-center mb-4">Pendientes</h5>
           <Task
             v-show="!tarea.finished"
@@ -24,7 +24,7 @@
             v-on:finish-task="finishTask(tarea.id)"
           />
       </div>
-      <div class="col-lg-6 border-left">
+      <div class="col-lg-6 col-md-6 col-sm-6 border-left">
         <h5 class="text-center mb-4">Finalizadas</h5>
         <Task
           v-show="tarea.finished"
