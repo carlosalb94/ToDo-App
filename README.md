@@ -6,17 +6,21 @@
 
 ## Project setup
 
+\* Clone the project and inside the folder open a terminal and run
+
 ```
 npm install
 ```
 
 ### Compiles and hot-reloads for development
 
-\*On the project folder run
+\*On the project folder
 
 ```
 npm run serve
 ```
+
+\* to run the application
 
 ### Compiles and minifies for production
 
