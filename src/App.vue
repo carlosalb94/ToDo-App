@@ -1,5 +1,5 @@
 <template>
-  <div :style="cssProps">
+  <div :style="setCustomBoardColor">
     <Board class="container-lg container-md container-sm py-5 px-3"/>
   </div>
 </template>
@@ -19,7 +19,7 @@ export default {
   },
 
   computed:{
-    cssProps() {
+    setCustomBoardColor() {
       return {
        'background-color':this.boardColor,
        'min-height': this.heightBoard+"vh"
