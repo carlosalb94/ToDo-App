@@ -1,11 +1,12 @@
 # my-todo-app
 
-## Project setup
+## Project setup 
 ```
 npm install
 ```
 
 ### Compiles and hot-reloads for development
+*On the project folder run
 ```
 npm run serve
 ```
