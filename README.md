@@ -14,13 +14,12 @@ npm install
 
 ### Compiles and hot-reloads for development
 
-\*On the project folder
+\*To run the application
+\*On the project folder run
 
 ```
 npm run serve
 ```
-
-\* to run the application
 
 ### Compiles and minifies for production
 
